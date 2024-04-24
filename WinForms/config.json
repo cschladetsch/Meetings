@@ -1,5 +1,18 @@
 {
     "author": "Christian",
     "titile": "Title",
-    "comments_folder" : "c:\\temp"
+    "comments_folder": "c:\\temp\\${title}",
+    "aliases": [
+        "Christian" {
+                "CJS"
+                "name"
+                {
+                    "fullname": "Christian Schladetch"
+                }
+            ],
+                "alaias": "LukeM",
+                "fullname": "Luke Mewburn"
+            }
+        ]
+    }
 }
