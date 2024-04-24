@@ -1,12 +1,10 @@
 namespace WinFormsApp1 {
     public partial class Form1 : Form {
-        public Form1() {
+        public Form1(string fileName) {
             InitializeComponent();
-
-            LoadAdgenda();
         }
 
-        private void LoadAdgenda() {
+        private void LoadAdgenda(string FileName) {
             
         }
 
