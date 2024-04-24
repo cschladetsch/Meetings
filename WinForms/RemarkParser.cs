@@ -8,6 +8,8 @@ namespace Remarkable {
     }
 
     public class RemarkParser {
+        public string Title { get; private set; }
+
         public List<RemarkItem> Items { get; private set; } = new List<RemarkItem>();
 
         public RemarkParser(string filename) {
@@ -16,10 +18,21 @@ namespace Remarkable {
             }
 
             using var file = new StreamReader(filename);
-            Parse(file);
+            if (!Parse(file)) {
+                throw new Exception("Couldn't parse " + filename);
+            }
+
         }
 
-        private void Parse(StreamReader input) {
+        private bool Parse(StreamReader input) {
+            if (input == null ) {
+                throw new Exception("Nothing to read");
+            }
+
+            if ((Title = input.ReadLine()) == null) {
+                throw new Exception("Meeetings notes has no title");
+            }
+
             string line;
             while ((line = input.ReadLine()) != null) {
                 var item = new RemarkItem {
@@ -38,6 +51,8 @@ namespace Remarkable {
                     item.Children.Add(child);
                 }
             }
+
+            return true;
         }
 
         private string ExtractText(string line) {
