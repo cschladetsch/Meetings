@@ -1,5 +1,7 @@
 # Meetings Winforms Appp
 
+TODO: Pull Remarker out to a separate library.
+
 # Remark
 
 Intended to be an alternative to JSON and YAML and XML.
