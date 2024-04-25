@@ -44,7 +44,7 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(12, 134);
+            richTextBox1.Location = new Point(12, 90);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.Size = new Size(1006, 171);
@@ -54,7 +54,7 @@
             // 
             // Next
             // 
-            Next.Location = new Point(915, 617);
+            Next.Location = new Point(901, 553);
             Next.Name = "Next";
             Next.Size = new Size(112, 34);
             Next.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // ItemComments
             // 
-            ItemComments.Location = new Point(12, 348);
+            ItemComments.Location = new Point(12, 304);
             ItemComments.Name = "ItemComments";
             ItemComments.Size = new Size(1006, 222);
             ItemComments.TabIndex = 4;
@@ -73,7 +73,7 @@
             // comments
             // 
             comments.AutoSize = true;
-            comments.Location = new Point(12, 320);
+            comments.Location = new Point(11, 269);
             comments.Name = "comments";
             comments.Size = new Size(99, 25);
             comments.TabIndex = 5;
@@ -82,7 +82,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 81);
+            label1.Location = new Point(12, 37);
             label1.Name = "label1";
             label1.Size = new Size(48, 25);
             label1.TabIndex = 6;
@@ -91,15 +91,15 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(430, 622);
+            label2.Location = new Point(398, 558);
             label2.Name = "label2";
-            label2.Size = new Size(95, 25);
+            label2.Size = new Size(136, 25);
             label2.TabIndex = 7;
-            label2.Text = "Remaining";
+            label2.Text = "Item Remaining";
             // 
             // AddTime
             // 
-            AddTime.Location = new Point(785, 617);
+            AddTime.Location = new Point(783, 553);
             AddTime.Name = "AddTime";
             AddTime.Size = new Size(112, 34);
             AddTime.TabIndex = 8;
@@ -109,22 +109,22 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 622);
+            label3.Location = new Point(7, 558);
             label3.Name = "label3";
-            label3.Size = new Size(50, 25);
+            label3.Size = new Size(84, 25);
             label3.TabIndex = 7;
-            label3.Text = "Time";
+            label3.Text = "Time Left";
             // 
             // TotalTimeProgress
             // 
-            TotalTimeProgress.Location = new Point(85, 620);
+            TotalTimeProgress.Location = new Point(97, 553);
             TotalTimeProgress.Name = "TotalTimeProgress";
-            TotalTimeProgress.Size = new Size(339, 34);
+            TotalTimeProgress.Size = new Size(286, 34);
             TotalTimeProgress.TabIndex = 9;
             // 
             // CurrentItemProgress
             // 
-            CurrentItemProgress.Location = new Point(531, 620);
+            CurrentItemProgress.Location = new Point(546, 553);
             CurrentItemProgress.Name = "CurrentItemProgress";
             CurrentItemProgress.Size = new Size(231, 34);
             CurrentItemProgress.TabIndex = 10;
@@ -135,7 +135,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2, toolStripButton3 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1069, 33);
+            toolStrip1.Size = new Size(1038, 33);
             toolStrip1.TabIndex = 11;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -169,7 +169,7 @@
             // ItemTitle
             // 
             ItemTitle.AutoSize = true;
-            ItemTitle.Location = new Point(66, 81);
+            ItemTitle.Location = new Point(66, 37);
             ItemTitle.Name = "ItemTitle";
             ItemTitle.Size = new Size(83, 25);
             ItemTitle.TabIndex = 12;
@@ -180,8 +180,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1069, 686);
-            ControlBox = false;
+            ClientSize = new Size(1038, 602);
             Controls.Add(ItemTitle);
             Controls.Add(toolStrip1);
             Controls.Add(CurrentItemProgress);

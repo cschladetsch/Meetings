@@ -11,9 +11,9 @@ namespace WinFormsApp1 {
             LoadAdgenda(fileName);
         }
 
-        private void LoadAdgenda(string FileName) {
-            Console.WriteLine("Reading {Filename}");
-            _parsed = new RemarkParser(FileName);
+        private void LoadAdgenda(string fileName) {
+            Console.WriteLine($"Reading {fileName}");
+            _parsed = new RemarkParser(fileName);
             Text = "Meeting - " + _parsed.Title;
         }
 

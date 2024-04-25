@@ -1,18 +1,6 @@
 {
-    "author": "Christian",
-    "titile": "Title",
-    "comments_folder": "c:\\temp\\${title}",
-    "aliases": [
-        "Christian" {
-                "CJS"
-                "name"
-                {
-                    "fullname": "Christian Schladetch"
-                }
-            ],
-                "alaias": "LukeM",
-                "fullname": "Luke Mewburn"
-            }
-        ]
-    }
+    "author": "Christian S",
+    "base_folder": "/opt/softel/meetings/${author}/${datetime}",
+    "comments_folder": "${base_folder}/${title}/comments",
+    "": ""
 }

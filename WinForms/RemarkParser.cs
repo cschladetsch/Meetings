@@ -3,7 +3,7 @@
 namespace Remarkable {
     public class RemarkItem {
         public string Text { get; set; }
-        public int? Time { get; set; }
+        public TimeSpan? Duration { get; set; }
         public List<RemarkItem> Children { get; set; } = new List<RemarkItem>();
     }
 
@@ -37,7 +37,7 @@ namespace Remarkable {
             while ((line = input.ReadLine()) != null) {
                 var item = new RemarkItem {
                     Text = ExtractText(line),
-                    Time = ExtractTime(line)
+                    Duration = ExtractTime(line)
                 };
 
                 Items.Add(item);
@@ -45,7 +45,7 @@ namespace Remarkable {
                 while ((line = input.ReadLine()) != null && IsChild(line)) {
                     var child = new RemarkItem {
                         Text = ExtractText(line),
-                        Time = ExtractTime(line)
+                        Duration = ExtractTime(line)
                     };
 
                     item.Children.Add(child);
@@ -60,10 +60,10 @@ namespace Remarkable {
             return match.Success ? match.Value : string.Empty;
         }
 
-        private int? ExtractTime(string line) {
-            var match = Regex.Match(line, @"\((\d+))");
+        private TimeSpan? ExtractTime(string line) {
+            var match = Regex.Match(line, @"\(\d+\)");
             if (match.Success) {
-                return (int.Parse(match.Groups[1].Value));
+                return TimeSpan.FromSeconds(int.Parse(match.Groups[1].Value));
             }
             return null;
         }
